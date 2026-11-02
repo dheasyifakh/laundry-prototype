@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fb"><title>Laundry — Mobile App Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="stage">
+    <div class="device">
+      <div class="statusbar"><span>9:41</span><span>● ● ● ▰</span></div>
+      <header class="app-header">
+        <button class="icon-btn" id="backBtn" aria-label="Kembali" hidden>‹</button>
+        <div class="brand-mark">L</div><div class="brand-copy"><b>Laundry</b><small id="outletLabel">Outlet Palmerah</small></div>
+        <button class="avatar" id="profileBtn">DS</button>
+      </header>
+      <section id="app" class="screen" aria-live="polite"></section>
+      <nav class="bottom-nav" id="bottomNav">
+        <button data-tab="home" class="active"><span>⌂</span><small>Beranda</small></button>
+        <button data-tab="orders"><span>▤</span><small>Pesanan</small></button>
+        <button data-tab="customers"><span>♙</span><small>Pelanggan</small></button>
+        <button data-tab="more"><span>☷</span><small>Lainnya</small></button>
+      </nav>
+      <div class="toast" id="toast"></div>
+    </div>
+    <aside class="prototype-note"><b>Laundry mobile app</b><span>Interactive portfolio prototype</span><span>390 × 844 · HTML / CSS / JavaScript</span><button id="resetBtn">Reset prototype</button></aside>
+  </main>
+  <script src="app.js"></script>
+</body></html>
